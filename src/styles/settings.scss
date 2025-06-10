@@ -1,0 +1,14 @@
+// Vuetify SASS variables customization
+// https://vuetifyjs.com/en/features/sass-variables/
+
+// Global theme
+$color-pack: true !default;
+
+// Custom variables
+:root {
+  --primary-color: #1867C0;
+  --secondary-color: #5CBBF6;
+  --accent-color: #82B1FF;
+}
+
+// Any other global SASS variables or mixins can be defined here 
