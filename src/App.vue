@@ -17,7 +17,7 @@
 
     <v-app-bar>
       <v-app-bar-nav-icon @click="drawer = !drawer" />
-      <v-app-bar-title>Vuetify Components Demo</v-app-bar-title>
+      <v-app-bar-title class="cursor-pointer" @click="router.push('/')">Vuetify Components Demo</v-app-bar-title>
       <v-spacer />
       <v-btn icon="mdi-theme-light-dark" @click="toggleTheme" />
     </v-app-bar>
@@ -32,8 +32,10 @@
 
 <script setup lang="ts">
   import { ref } from 'vue'
+  import { useRouter } from 'vue-router'
   import { useTheme } from 'vuetify'
 
+  const router = useRouter()
   const theme = useTheme()
   const drawer = ref(false)
 
